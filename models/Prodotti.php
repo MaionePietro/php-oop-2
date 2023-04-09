@@ -67,21 +67,4 @@ class Prodotti{
 
         return $this;
     }
-
-    public function printCardHTML() {
-    ?>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"><?php echo $this->getId() ?></h5>
-              <ul>
-                <li><strong>Categoria:</strong> <?php echo $this->getCategoria() ?></li>
-                <li><strong>Prezzo:</strong> <?php echo $this->getPrezzo() ?></li>
-                <li><strong>Nome:</strong> <?php echo $this->getNome() ?></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    <?php
-    }
 }

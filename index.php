@@ -3,11 +3,17 @@ require_once __DIR__ . "/models/Dog.php";
 require_once __DIR__ . "/models/Cat.php";
 
 
-$articoliCane =[
+$articoliCani =[
     $cane1 = new Dog(42, "smoll", "crocchette", 20, "img.png", "cane", "boby"),
     $cane2 = new Dog(42, "smoll", "crocchette", 20, "img.png", "cane", "boby"),
     $cane3 = new Dog(42, "smoll", "crocchette", 20, "img.png", "cane", "boby"),
     $cane4 = new Dog(42, "smoll", "crocchette", 20, "img.png", "cane", "boby"),
+];
+$articoliGatti =[
+    $gatto1 = new Cat("pelo piumino", "elettrica", "scatolette", 29, "img.png", "gatto", "Asso"),
+    $gatto2 = new Cat("pelo piumino", "elettrica", "scatolette", 29, "img.png", "gatto", "Asso"),
+    $gatto3 = new Cat("pelo piumino", "elettrica", "scatolette", 29, "img.png", "gatto", "Asso"),
+    $gatto4 = new Cat("pelo piumino", "elettrica", "scatolette", 29, "img.png", "gatto", "Asso"),
 ];
 
 ?>
@@ -30,22 +36,22 @@ $articoliCane =[
         <section>
             <h2>Articoli cani</h2>
 
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <?php foreach ($articoliCane as $articolo) {
-                    $articolo->printCardHTML();
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <?php foreach ($articoliCani as $articolo) {
+                    $articolo->printCardDogHTML();
                 } ?>
             </div>
         </section>
-        <!-- <section> 
+        <section> 
             <h2>Articoli gatti</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <?php //foreach ($auto as $veicolo) :
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <?php foreach ($articoliGatti as $articolo) :
 
-                    //$veicolo->printCardHTML();
+                    $articolo->printCardCatHTML();
 
-                //endforeach ?>
+                endforeach ?>
             </div>
-        </section>-->
+        </section>
     </main>
 </body>
 
