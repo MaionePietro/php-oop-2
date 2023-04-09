@@ -1,3 +1,11 @@
+<?php
+require_once __DIR__ . "/models/Dog.php";
+require_once __DIR__ . "/models/Cat.php";
+
+$cane1 = new Dog(42, "smoll", "crocchette", 20, "img.png", "cane", "boby");
+var_dump($cane1);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
