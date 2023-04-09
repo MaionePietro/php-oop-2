@@ -11,5 +11,4 @@ class Dog extends Prodotti{
         $this->cuccia = $cuccia;
         $this->cibo = $cibo;
     }
-
 }
